@@ -1,139 +1,44 @@
-# Sample projects for Agora RTC Web SDK 4.x
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-_English | [简体中文](README.cn.md)_
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-This repository contains sample projects using the Agora RTC Web SDK 4.x.
+### `npm start`
 
-<hr>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**If you are still not familiar with Agora RTC Web SDK 4.x, please follow [our community interactive tutorial](https://agorawebsdktutorialenusmain.gtsb.io/) to quickly understand the SDK and use CodePen iframes to call the SDK in your browser.**
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-<hr>
+### `npm test`
 
-The Web SDK 4.x refactors the Web SDK 3.x. Based on the features of 3.x, 4.x fully optimizes the internal architecture of the SDK and provides more flexible and easy-to-use APIs.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Compared to the Web SDK 3.x, the Web SDK 4.x has the following advantages:
+### `npm run build`
 
-- Uses promises for asynchronous operations, which improves the robustness and readability of your code.
-- Supports TypeScript.
-- Replaces the Stream object with Track objects for separate and flexible control over audio and video.
-- Improves the channel event notification mechanism, making it easier for you to deal with reconnection.
-- Provides more accurate and comprehensive error codes for troubleshooting.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Projects using jQuery and Bootstrap
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-| Feature             | Sample project location                     |
-| ------------------- | -------------------------------- |
-| Adjust video profile        | [/Demo/adjustVideoProfile](/Demo/adjustVideoProfile)        |
-| Audio mixing and audio effect          | [/Demo/audioMixingAndAudioEffect](/Demo/audioMixingAndAudioEffect) |
-| Live streaming            | [/Demo/basicLive](/Demo/basicLive)                 |
-| Enable/disable Video/Audio track | [/Demo/basicMute](/Demo/basicMute)                 |
-| Video call            | [/Demo/basicVideoCall](/Demo/basicVideoCall)            |
-| Cloud proxy            | [/Demo/cloudProxy](/Demo/cloudProxy)            |
-| Custom video source            | [/Demo/customVideoSource](/Demo/customVideoSource)            |
-| Display call status        | [/Demo/displayCallStats](/Demo/displayCallStats)          |
-| Dual stream            | [/Demo/dualStream](/Demo/dualStream)                |
-| Geofencing          | [/Demo/geoFencing](/Demo/geoFencing)           |
-| Join multiple channels          | [/Demo/joinMultipleChannel](/Demo/joinMultipleChannel)           |
-| Push stream to CDN          | [/Demo/pushStreamToCDN](/Demo/pushStreamToCDN)           |
-| Control recording devices        | [/Demo/recordingDeviceControl](/Demo/recordingDeviceControl)    |
-| Custom rendering            | [/Demo/selfRendering](/Demo/selfRendering)            |
-| Custom Capturing            | [/Demo/selfCapturing](/Demo/selfCapturing)            |
-| Share the screen            | [/Demo/shareTheScreen](/Demo/shareTheScreen)            |
-|  Video beauty effect                 | [/Demo/videoBeautyEffect](/Demo/videoBeautyEffect)         |
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### How to run the sample projects
+### `npm run eject`
 
-#### Prerequisites
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-You need a supported browser to run the sample projects. See [Product Overview](https://docs.agora.io/en/Interactive%20Broadcast/product_live?platform=Web#compatibility) for a list of supported browsers.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### Steps to run
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-1. Use a supported browser to open `Demo/index.html` and select a demo.
-2. In the demo page, enter your App ID, token, and channel name and join the channel.
-   - See [Get Started with Agora](https://docs.agora.io/en/Agora%20Platform/get_appid_token) to learn how to get an App ID and token. You can get a temporary access token to quickly try out this sample project.
-   - The channel name must be the same as the channel ID used to generate the token.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Projects using React.js
+## Learn More
 
-| Feature    | Sample project location |
-| ---------- | ----------------------- |
-| Video call | [/ReactDemo](/ReactDemo)  |
-| OpenLive   |  [/OpenLive](/OpenLive) |
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### How to run the sample projects
-
-#### Prerequisites
-
-- You need a supported browser to run the sample projects. See [Product Overview](https://docs.agora.io/en/Interactive%20Broadcast/product_live?platform=Web#compatibility) for a list of supported browsers.
-- [npm](https://www.npmjs.com/)
-
-#### Steps to run the ReactDemo
-
-1. Navigate to [/ReactDemo](/ReactDemo) and run the following command to install dependencies.
-
-   ```shell
-   npm install
-   ```
-
-2. Use the following command to run the sample project.
-
-   ```shell
-   npm run start
-   ```
-
-3. In the demo page, enter your App ID, token, and channel name and join the channel.
-   - See [Get Started with Agora](https://docs.agora.io/en/Agora%20Platform/get_appid_token) to learn how to get an App ID and token. You can get a temporary access token to quickly try out this sample project.
-   - The channel name must be the same as the channel ID used to generate the token.
-
-#### Steps to run OpenLive
-
-1. Navigate to [/OpenLive](/OpenLive). Rename the **.env.example** file as **.env**. In the **.env** file, replace `<#YOUR APP ID#>` with the App ID, and
- replace `<#YOUR TOKEN#>` with the token.
-
-   > See [Get Started with Agora](https://docs.agora.io/en/Agora%20Platform/get_appid_token) to learn how to get an App ID and token. You can get a temporary access token to quickly try out this sample project.
-
-   ```shell
-   REACT_APP_AGORA_APP_ID=<#YOUR APP ID#>
-   REACT_APP_AGORA_APP_TOKEN=<#YOUR TOKEN#>
-   REACT_APP_AGORA_LOG=true
-   ```
-
-2. Run the following command to install dependencies.
-
-   ```shell
-   npm install
-   ```
-
-3. Run the following command to start the project.
-
-   > The channel name must be the same as the channel ID used to generate the token.
-
-   ```shell
-   npm run dev
-   ```
-
-## Reference
-
-- [Web SDK 4.x Product Overview](https://docs.agora.io/en/Interactive%20Broadcast/product_live?platform=Web)
-- [Web SDK 4.x API Reference](https://docs.agora.io/en/Interactive%20Broadcast/API%20Reference/web_ng/index.html)
-- [Online demo deployed from this repo](https://webdemo.agora.io/)
-
-## Feedback
-
-If you have any problems or suggestions regarding the sample projects, feel free to file an issue.
-
-## Related resources
-
-- Check our [FAQ](https://docs.agora.io/en/faq) to see if your issue has been recorded.
-- Dive into [Agora SDK Samples](https://github.com/AgoraIO) to see more tutorials
-- Take a look at [Agora Use Case](https://github.com/AgoraIO-usecase) for more complicated real use case
-- Repositories managed by developer communities can be found at [Agora Community](https://github.com/AgoraIO-Community)
-- If you encounter problems during integration, feel free to ask questions in [Stack Overflow](https://stackoverflow.com/questions/tagged/agora.io)
-
-## License
-
-The sample projects are under the MIT license. See the [LICENSE](./LICENSE) file for details.
+To learn React, check out the [React documentation](https://reactjs.org/).
