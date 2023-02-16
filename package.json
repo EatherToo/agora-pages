@@ -13,6 +13,7 @@
     "@types/react-dom": "^16.9.8",
     "agora-extension-ai-denoiser": "^1.0.0",
     "agora-rtc-sdk-ng": "^4.8.2",
+    "gh-pages": "^5.0.0",
     "node": "^16.17.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
